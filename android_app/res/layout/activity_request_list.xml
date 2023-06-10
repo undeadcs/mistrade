@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_dates"/>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button android:id="@+id/btnDateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_date_input"
+            android:layout_alignParentLeft="true"
+            android:onClick="onDatePick"/>
+        
+        <Button android:id="@+id/btnDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_date_input"
+            android:layout_alignParentRight="true"
+            android:onClick="onDatePick"/>
+        
+    </RelativeLayout>
+    
+    <RadioGroup android:id="@+id/db_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RadioButton android:id="@+id/db_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_db_type_main"/>
+        
+        <RadioButton android:id="@+id/db_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_db_type_local"/>
+        
+    </RadioGroup>
+    
+    <ListView android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</LinearLayout>

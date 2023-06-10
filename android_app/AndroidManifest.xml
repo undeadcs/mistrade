@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.undeadcs.mistrade"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="ru.undeadcs.mistrade.MISTradeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ru.undeadcs.mistrade.Login"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.undeadcs.mistrade.Request"
+            android:label="@string/title_activity_request" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ru.undeadcs.mistrade.Login" />
+        </activity>
+        <activity
+            android:name="ru.undeadcs.mistrade.ClientList"
+            android:label="@string/title_activity_client_list" >
+        </activity>
+        <activity
+            android:name="ru.undeadcs.mistrade.ProductList"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name="ru.undeadcs.mistrade.Sync"
+            android:label="@string/title_activity_sync" >
+        </activity>
+        <activity
+            android:name="ru.undeadcs.mistrade.RequestList"
+            android:label="@string/title_activity_request_list" >
+        </activity>
+    </application>
+
+</manifest>

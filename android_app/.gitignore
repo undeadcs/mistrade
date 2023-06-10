@@ -1,0 +1,13 @@
+*~
+.settings/
+.project
+project.properties
+proguard-project.txt
+libs/
+gen/
+bin/
+assets/
+.classpath
+.htaccess
+*mistrade.tar.gz
+create_distr.sh

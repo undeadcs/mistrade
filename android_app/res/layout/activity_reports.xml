@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportsActivity" >
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:text="@string/lbl_from"/>
+	    
+	    <!--Button android:id="@+id/from"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lbl_date_input"
+	        android:onClick="onPickDateFrom"/-->
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lbl_to"
+	        android:paddingLeft="15sp"/>
+	    
+	    <!--Button android:id="@+id/to"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lbl_date_input"
+	        android:onClick="onPickDateTo"/-->
+    
+    </LinearLayout>
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_search"
+        android:onClick="onSearch"/>
+    
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

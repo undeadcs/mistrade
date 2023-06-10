@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sync_last_execution"/>
+    
+    <TextView android:id="@+id/syncLastExecution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button android:id="@+id/btnExecuteSync"
+            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btn_sync_execution"
+	        android:onClick="onUpdateExecute"/>
+        
+        <ProgressBar android:id="@+id/pbExecuteSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>
+</ScrollView>

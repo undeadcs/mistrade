@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="5dp"
+        android:paddingTop="1dp"
+        android:textStyle="bold"/>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        
+        <TextView android:id="@+id/lblPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:text="@string/lbl_price"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView android:id="@+id/price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#888"
+	        android:gravity="left"
+	        android:layout_toRightOf="@id/lblPrice"/>
+        
+        <TextView android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="3dp"
+            android:layout_alignParentRight="true"/>
+        
+        <TextView android:id="@+id/saldo"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#a88"
+	        android:layout_toLeftOf="@id/unit"/>
+        
+        <TextView android:id="@+id/lblSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:text="@string/lbl_saldo"
+            android:layout_toLeftOf="@id/saldo"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

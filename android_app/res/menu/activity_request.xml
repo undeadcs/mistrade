@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_request_list"
+        android:icon="@drawable/collections_view_as_list"
+        android:title="@string/request_list"
+        android:showAsAction="always"/>
+    <item android:id="@+id/menu_sync"
+        android:icon="@drawable/content_import_export"
+        android:title="@string/sync"
+        android:showAsAction="always"/>
+    <item android:id="@+id/menu_save"
+        android:icon="@drawable/content_save"
+        android:title="@string/save"
+        android:showAsAction="always|withText"/>
+</menu>
